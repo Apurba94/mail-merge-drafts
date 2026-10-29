@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mail-merge-drafts"
+version = "0.1.0"
+description = "Create personalized email drafts (.eml) for collaborators from a CSV and template."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+mail-merge-drafts = "mail_merge_drafts.cli:main"
+
+[tool.setuptools]
+packages = ["mail_merge_drafts"]
